@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>M3 | 3. Write Clean Code</title>
+  </head>
+  <body>
+    <script>
+      // Para escribir codigo limpio tenemos que hacer Refactoring
+      // Refactoring = cambiar la estructura codigo sin cambiar su comportamiento
+
+      // Tecnica 1: DRY Don't Repeat Yourself
+      // Evitar la repeticion de codigo al minimo usando funciones
+      const firstUser = {
+        name: 'antonio',
+        online: true,
+        accountType: 'normal',
+      };
+      const secondUser = {
+        name: 'antonio',
+        online: true,
+        accountType: 'normal',
+      };
+      const thirdUser = {
+        name: 'antonio',
+        online: true,
+        accountType: 'normal',
+      };
+      if (firstUser.online) {
+        if (firstUser.accountType === 'normal') {
+          console.log('Hello ' + firstUser.name + '!');
+        } else {
+          console.log('Welcome back premium user ' + firstUser.name + '!');
+        }
+      }
+
+      if (secondUser.online) {
+        if (secondUser.accountType === 'normal') {
+          console.log('Hello ' + secondUser.name + '!');
+        } else {
+          console.log('Welcome back premium user ' + secondUser.name + '!');
+        }
+      }
+
+      if (thirdUser.online) {
+        if (thirdUser.accountType === 'normal') {
+          console.log('Hello ' + thirdUser.name + '!');
+        } else {
+          console.log('Welcome back premium user ' + thirdUser.name + '!');
+        }
+      }
+
+      // SOLUCION: creamos una funcion para evitar tanto codigo
+      const sendWelcomeMessageToUser = (user) => {
+        if (user.online) {
+          if (user.accountType === 'normal') {
+            console.log('Hello ' + user.name + '!');
+          } else {
+            console.log('Welcome back premium user ' + thirdUser.name + '!');
+          }
+        }
+      };
+      sendWelcomeMessageToUser(firstUser);
+      sendWelcomeMessageToUser(secondUser);
+      sendWelcomeMessageToUser(thirdUser);
+
+      // Tecnica 2: Una funcion debe hacer solo UNA cosa y tener un nombre descriptivo
+      const printStringStats = (stringToTest) => {
+        const wordArray = stringToTest.split(' ');
+        const wordCount = wordArray.length;
+        let letterCount = 0;
+        for (let word of wordArray) {
+          word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+          letterCount += word.length;
+        }
+        const averageWordLength = parseFloat(
+          (letterCount / wordCount).toFixed(2)
+        );
+        const stringStats = {
+          wordCount: wordCount,
+          letterCount: letterCount,
+          averageWordLength: averageWordLength,
+        };
+        console.log(stringStats);
+      };
+      // Refactoring : crear una funcion para cada funcionalidad
+      const getWordCount = (stringToTest) => {
+        const wordArray = stringToTest.split(' ');
+        return wordArray.length;
+      };
+      const getLetterCount = (stringToTest) => {
+        return 10;
+      };
+      const getAverage = (stringToTest) => {
+        return parseFloat(
+          getLetterCount(stringToTest) / getWordCount(stringToTest)
+        ).toFixed(2);
+      };
+      const printStringStats2 = (stringToTest) => {
+        console.log({
+          wordCount: getWordCount(stringToTest),
+          letterCount: getLetterCount(stringToTest),
+          averageWordLength: getAverage(stringToTest),
+        });
+      };
+      printStringStats2(
+        ' mi pruyeba de cadena es esta y si no te gusta pues nada'
+      );
+
+      // TECNICA 3 : Comentar el codigo para que quede claro
+      // comentario de una linea
+      /*
+    comentario de
+    varias
+    lineas
+     */
+
+      // TECNICA 4: Escribir siguiendo un estilo consistente
+      // constantes UPPERCASE_SNAKE
+      const HORAS_DIA = 24;
+      // variables y funciones lowerCamelCase
+      let miAmigo;
+      const addNumber = (a, b) => {
+        return a + b;
+      };
+
+      // clases UpperCamelCase
+      class BankAccount {}
+      // usar nombres descriptivos
+      // No usar w,l,i
+      // usar word, len ,index
+
+      // TECNICA 5: code formating: indentado, espacios, parentesis funciones
+      // Utilizamos un plugin como prettier en VSCODE
+    </script>
+  </body>
+</html>

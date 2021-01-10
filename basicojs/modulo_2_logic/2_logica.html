@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>06 logica</title>
+  </head>
+  <body>
+    <script>
+      // Conditionals: if/else
+      let userLoggedIn = true;
+      if (userLoggedIn) {
+        console.log('User logged');
+      } else {
+        console.log('Please login');
+      }
+      // Using expression
+      // Mediante operadores podemos hacer comparaciones: <,<=,>,>=,==,!=
+      const numberOfSeats = 30;
+      let numberOfGuests = 25;
+
+      if (numberOfGuests < numberOfSeats) {
+        // Puede entrar gente
+      } else {
+        // AFORO COMPLETO
+      }
+
+      // if-elseif(varios si fuera necesario)-else
+      let age = 41;
+      if (age < 18) {
+        // menor
+      } else if (age < 65) {
+        // adulto
+      } else {
+        // anciano
+      }
+
+      // Existe dos operadores para comparar igualdad: == y ===
+      // === es como == pero ademas comprueba que sean mismo tipo
+      // Buena Practica: USAR SIEMPRE === (y !==)
+      console.log(5 == '5');
+      console.log(5 === '5');
+
+      // Multiple condiciones:
+      // Utilizamos operadores logicos: && (and), || (or) , ! (not)
+      let userLogado = true;
+      let userPremiumAccount = true;
+      let userMegaPremiumAccount = false;
+
+      // Ambito
+      // Cuando se declara una variable (let) o una constante (const) puede ser accedida en su ambito
+      // y ese ambito es el bloque de codigo donde de define.
+      // Un bloque de codigo es un trozo de codigo delimitado por { xxxcodigoxxx }
+      // Antes se usaba var en vez de let y el ambito era de funcion pero let es mas estricto
+      // NOTA: si necesitamos fuera de un bloque pues la definimos fuera del bloque
+      let mensaje = '';
+      if (userLoggedIn) {
+        //let mensaje = 'mensaje inaccesible fuera';
+        mensaje = ' ahora si ';
+      }
+      console.log(mensaje); // ReferenceError !!! No existe
+
+      // switch
+      let usuario1 = {
+        name: 'antonio',
+        edad: 22,
+        cuenta: 'normal',
+      };
+      let usuario2 = {
+        name: 'marco',
+        edad: 8,
+        cuenta: 'premium',
+      };
+      switch (usuario1.cuenta) {
+        case 'normal':
+          console.log('cuenta normal, sube a premium por 10€/mes');
+          break;
+        case 'premium':
+          console.log('cuenta premium, sube a mega por 10€/mes');
+          break;
+        case 'mega':
+          console.log('cuenta mega premium. Disfruta del 4K');
+          break;
+        default:
+          console.log('Cuenta desconocida');
+          break;
+      }
+    </script>
+  </body>
+</html>

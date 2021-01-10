@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objetos Ejercicio</title>
+</head>
+<body>
+<!-- https://codepen.io/nicolaspatschkowski/pen/NWqMQvM -->
+<div class="series-frame">
+    <h2>The Story of Tau</h2>
+    <p id="episode-info"></p>
+</div>
+<script>
+    // Create Object here
+    /*
+        Create an Object and store it in a variable called episode, using curly-brace notation (JSON), with three keys:
+        title
+        duration
+        hasBeenWatched
+    Associate appropriate values to each of these keys.
+     */
+    // =========================================
+    let episode = {
+        title: 'La mascara',
+        duration: 45,
+        hasBeenWatched: true
+    };
+
+    // =========================================
+
+    document.querySelector('#episode-info').innerText = `Episode: ${episode.title}
+Duration: ${episode.duration} min
+${episode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
+
+</script>
+</body>
+</html>

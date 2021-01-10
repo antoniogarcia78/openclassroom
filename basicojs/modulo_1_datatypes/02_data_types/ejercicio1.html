@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="series-frame">
+    <h2>The Story of Tau</h2>
+    <p id="episode-info"></p>
+</div>
+
+<script>
+    // Create variables here
+    /*
+    Now that you've helped complete the show component, it's time to work on an individual episode component.
+    This component will show the title of the episode, its duration (in minutes),
+    and whether or not the user has already watched the episode.
+    Create a variable called episodeTitle containing a string, and give your episode an exciting title.
+    Create a number variable called episodeDuration, and decide how long your episode is in minutes.
+    Finally, create a boolean variable called hasBeenWatched which states whether or not the user has already watched the episode.
+    Check if the component works as you would expect it to. Don't hesitate to modify your values and see if the behavior is what you expect.
+
+     */
+    // =========================================
+    let episodeTitle = 'La mascara';
+    let episodeDuration = 45;
+    let hasBeenWatched = true;
+
+    // =========================================
+
+    document.querySelector('#episode-info').innerText = `Episode: ${episodeTitle}
+    Duration: ${episodeDuration} min ${hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
+
+</script>
+</body>
+</html>

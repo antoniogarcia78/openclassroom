@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Let's make another modification to the logic in our  Episode  class. Your colleague's component now expects each episode to have the following properties:
+
+    title  : a string containing the episode's title;
+
+    duration  : a number, corresponding to the duration of the episode in minutes;
+
+    watchedText  : a string containing either 'Not yet watched', 'Watching', or 'Watched' depending on how many minutes have been watched;
+
+    continueWatching  : a boolean which is true if the user has started watching the episode but has not finished, and false otherwise.
+
+You know what to do!
+
+    Using one or more if/else statements, add the required logic to the Episode class constructor.
+
+    Can you find a way to make your code shorter or easier to read?
+     */
+    class Episode {
+        constructor(title, duration, minutesWatched) {
+            this.title = title;
+            this.duration = duration;
+            // Add logic here
+            // ======================
+            continueWatching = false;
+            if (minutesWatched === 0) {
+                this.watchedText = 'Not yet watched';
+            } else if (minutesWatched < duration) {
+                this.watchedText = 'Watching';
+                continueWatching = true;
+            } else if (minutesWatched === duration) {
+                this.watchedText = 'Watched';
+            }
+
+
+            // ======================
+        }
+    }
+
+    let firstEpisode = new Episode('Dark Beginnings', 45, 45);
+    let secondEpisode = new Episode('The Mystery Continues', 45, 10);
+    let thirdEpisode = new Episode('An Unexpected Climax', 60, 0);
+
+    let episodes = [firstEpisode, secondEpisode, thirdEpisode];
+
+    const body = document.querySelector('body');
+
+    for (let i = 0; i < 12; i++) {
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('series-frame');
+        let newTitle = document.createElement('h2');
+        newTitle.innerText = 'The Story of Tau';
+        let newParagraph = document.createElement('p');
+        newParagraph.innerText = `${episodes[i].title}
+${episodes[i].duration} minutes
+${episodes[i].watchedText}
+`;
+        newDiv.append(newTitle);
+        newDiv.append(newParagraph);
+        if (episodes[i].continueWatching) {
+            let newButton = document.createElement('button');
+            newButton.innerText = 'Continue watching';
+            newParagraph.append(newButton);
+        }
+        body.append(newDiv);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>classes methods</title>
+</head>
+<body>
+<script>
+    // Instance Method
+    // necesitan/actuan en el objeto
+    // la variable this referencia al objeto que llama el metodo
+    class BankAccount {
+        // necesario para crear objeto
+        constructor(owner, balance) {
+            this.owner = owner;
+            this.balance = balance;
+        }
+
+        // instance methods
+        showBalance() {
+            console.log('Balance ' + this.balance + ' EUR');
+        }
+
+        deposit(amount) {
+            console.log('Depositing ' + amount + ' EUR');
+            this.balance += amount;
+        }
+
+        withdraw(amount) {
+            if (amount > this.balance) {
+                console.log('withdraw denied')
+            } else {
+                console.log('whitdrawing ' + amount + ' EUR');
+                this.balance -= amount;
+                this.showBalance();
+            }
+        }
+    }
+
+    const newAccount = new BankAccount('Antonio', 3000);
+
+    console.log(newAccount);
+    newAccount.deposit(500);
+    newAccount.showBalance();
+    newAccount.withdraw(500);
+
+    // Metodo static
+    // pertenece a la clase y no hace falta crear objeto para usarlo
+    // util para hacer metodos helpers como Math
+    class BePolite {
+        static sayHello() {
+            console.log('Hello!');
+        }
+
+        static sayHelloTo(name) {
+            console.log('hello ' + name);
+        }
+
+        static add(firstNumber, secondNumber) {
+            return firstNumber + secondNumber;
+        }
+    }
+    BePolite.sayHello();
+    BePolite.sayHelloTo('Antonio');
+    const sum = BePolite.add(2,3);
+
+</script>
+</body>
+</html>

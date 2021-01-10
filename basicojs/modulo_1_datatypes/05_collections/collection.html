@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Collections</title>
+  </head>
+  <body>
+    <a
+      href="https://openclassrooms.com/fr/courses/5664271-learn-programming-with-javascript/6056521-manage-complexity-with-the-right-collection"
+      >openclassrom collections</a
+    >
+
+    <script>
+      // Necesitamos una coleccion para agrupar variables y la coleccion mas utilizada es el Array
+
+      // Crear array vacios
+      let guestsEmpty = [];
+      // Crear array con valores
+      let guests = ['Antonio', 'Eugenia', 'Marco'];
+      // Acceder a los elementos del array
+      let primerGuest = guests[0]; // Empieza en 0
+      let otroGuest = guests[12]; // undefined porque el elemento 12 no ha sido inicializado
+
+      // En Javascript las variables de tipo primitivo se pasan por Valor (se pasa una copia)
+      // Asi si modificamos totalNumberOfGuest no altera el valor de numberOfGuests
+      let numberOfGuests = 20;
+      let totalNumberOfGuests = numberOfGuests;
+
+      // Los objetos y los arrays se pasan por referencia (se pasan el original y podria modificarse)
+      let artistProfile = {
+        name: 'Tau',
+        age: 27,
+        available: true,
+      };
+      let allProfiles = [artistProfile];
+      artistProfile.available = false;
+      // se comprueba que el objeto del array esta modificao porque son el mismo. No se copio!!!
+      console.log(allProfiles);
+
+      // Methods
+      let familia = ['antonio', 'eugenia', 'marco'];
+      // length es propiedad de los array y devuelve numero de elementos
+      let numeroFamilia = familia.length;
+      console.log(familia);
+      // push: añade al final del array
+      familia.push('Valentina');
+      console.log(familia);
+      // unshift: añade al principio
+      familia.unshift('Mario');
+      console.log(familia);
+      // pop: eliminar ultimo elemento
+      familia.pop();
+      console.log(familia);
+      // shift: eliminar primer elemento
+      familia.shift();
+      console.log(familia);
+
+      // Set = lista desordenada elementos no duplicados sin indice
+      // Map = lista ordenada elementos con key/value. (parecen objetos pero key no tienen que ser string)
+    </script>
+  </body>
+</html>

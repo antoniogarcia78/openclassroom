@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00e8599e-8483-44cd-a817-cd63d8755d3a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1g2dntQMt8igC0HkZd29it5enaG" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.MS SQL Server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\openclassroom\javascript\04_objects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\openclassroom\javascript" />
+      <recent name="D:\laragon\www\openclassroom\javascript\m1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.3_loops.html">
+    <configuration name="3_loops.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javascript/modulo2/3_loops.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="collection.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/05_collections/collection.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="ejercicio3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/04_objects/ejercicio3.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="ejercicio_P1CH5.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/05_collections/ejercicio_P1CH5.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="objetcs.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/04_objects/objetcs.html">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.3_loops.html" />
+        <item itemvalue="JavaScript Debug.objetcs.html" />
+        <item itemvalue="JavaScript Debug.ejercicio_P1CH5.html" />
+        <item itemvalue="JavaScript Debug.ejercicio3.html" />
+        <item itemvalue="JavaScript Debug.collection.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00e8599e-8483-44cd-a817-cd63d8755d3a" name="Default Changelist" comment="" />
+      <created>1597316791243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597316791243</updated>
+      <workItem from="1597316792319" duration="12014000" />
+      <workItem from="1597740208168" duration="1006000" />
+      <workItem from="1597827885495" duration="30000" />
+      <workItem from="1597827932370" duration="223000" />
+      <workItem from="1597828171388" duration="1554000" />
+      <workItem from="1597856918779" duration="16294000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="41" y="178" key="#Deployment" timestamp="1597740222090">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="41" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1597740222090" />
+    <state x="41" y="160" key="#Plugins" timestamp="1597828154327">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="41" y="160" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1597828154327" />
+    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597832236158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597832236158" />
+    <state x="1175" y="278" key="FileChooserDialogImpl" timestamp="1598444772343">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1175" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598444772343" />
+    <state x="458" y="185" key="SettingsEditor" timestamp="1597832212423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="458" y="185" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597832212423" />
+    <state x="935" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1597394885454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="935" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597394885454" />
+  </component>
+</project>

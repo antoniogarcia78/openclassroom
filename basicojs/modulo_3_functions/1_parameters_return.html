@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Functions - Parameters / Return value</title>
+  </head>
+  <body>
+    <script>
+      // function = bloque de codigo
+      // name([params]) {
+      //    ...codigo...
+      //    [return X;]
+      // }
+      // usamos name([params]);
+
+      // Forma Clasica
+      function add(a, b) {
+        return a + b;
+      }
+
+      // Forma funcion anonima ¿?
+      let suma = function (x, y) {
+        return x + y;
+      };
+      // Forma ARROW (ES6)
+      // No se pueden usar como metodos en clases (ademas tienen otras limitaciones)
+      const addArrow = (x, y) => {
+        const result = x + y;
+        return result;
+      };
+
+      console.log(add(1, 2));
+      console.log(suma(1, 2));
+      console.log(addArrow(1, 2));
+
+      // Array and objets in function
+      // Se pasan por referencia
+      // Dentro de las funciones se MODIFICAN !!! CUIDADO !!!
+      class Guest {
+        constructor(name, age, vip) {
+          this.name = name;
+          this.age = age;
+          this.vip = vip;
+        }
+      }
+      const firstGuest = new Guest('Antonio', 40, false);
+
+      const toggleGuestVip = (guest) => {
+        let newGuest = guest;
+        newGuest.vip = !newGuest.vip;
+        return newGuest;
+      };
+      const newGuest = toggleGuestVip(firstGuest);
+
+      console.log('firstGuet is ' + firstGuest.vip);
+      console.log('newGuest is ' + newGuest.vip);
+      firstGuest.name = 'Eugenia';
+      console.log(newGuest);
+    </script>
+  </body>
+</html>

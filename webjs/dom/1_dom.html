@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1 DOM traversal — how to get access to specific DOM elements or groups of elements</title>
+  </head>
+  <body>
+    <p>Parrafo 1</p>
+    <p>Otro parrafo</p>
+    <div class="especial">Elemento especial</div>
+    <footer id="pie">PIE DEL HTML</footer>
+    <script>
+      // Metodos para acceder al DOM
+
+      // getElementsByTagName = devuelve una HTMLCollection de elementos con tag P
+      let parrafos = document.getElementsByTagName('p');
+      console.log(parrafos);
+
+      // getElementsByClassName = devuelve una HTMLCollection de elementos que tengan la clase CSS especificada
+      let elementosEspeciales = document.getElementsByClassName('especial');
+      console.log(elementosEspeciales);
+
+      // getElementById = devuelve el elemento (id debe ser unico) con id especificado
+      const pie = document.getElementById('pie');
+
+      // querySelector = devuelve el primer elemento que cumple la condicion
+      // Este metodo es un compendio de los anteriores
+      document.querySelector('p'); // primer parrafo que encuentre
+      document.querySelector('.especial'); // primer elemento con clase css especial
+      document.querySelector('#pie'); // elemento con id = pie
+      document.querySelector('p.especial'); // parrafo con clase css (selector mas complejo)
+      // Si necesitamos obtener todos los elemento que cumplan la condicion
+      // usamos querySelectorAll que devuelven una NodeList
+      document.querySelectorAll('p');
+
+      // ARBOL DOM
+      // Podemos navegar por elementos del arbol DOM
+      let primerParrafo = parrafos[0];
+
+      // hijos
+      primerParrafo.children; // HTMLCollection
+      // padre
+      let padre = primerParrafo.parentElement;
+      // siguiente y anterior (util para listas)
+      let siguiente = primerParrafo.nextElementSibling;
+      let anterior = primerParrafo.previousElementSibling;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>M3 - 4.Testing</title>
+  </head>
+  <body>
+    <script>
+      // 3 tipos
+      // 1. Unit Testing: comprobar de forma indiviual funciones/clases
+      // Funciones
+      const getWordCount = (stringToTest) => {
+        const wordArray = stringToTest.split(' ');
+        return wordArray.length;
+      };
+
+      const getLetterCount = (stringToTest) => {
+        const wordArray = stringToTest.split(' ');
+        let totalLetters = 0;
+        for (let word of wordArray) {
+          word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+          totalLetters += word.length;
+        }
+        return totalLetters;
+      };
+      // Tests
+      const testSimpleWordCount = () => {
+        const testString = 'I have four words';
+        if (getWordCount(testString) !== 4) {
+          console.error('testSimpleWordCount FAIL');
+        }
+      };
+      const testEdgeWordCount = () => {
+        const testString = '      ';
+        if (getWordCount(testString) !== 0) {
+          console.error('testEdgeWordCount FAIL');
+        }
+      };
+      const testSimpleLetterCount = () => {
+        const testString = 'I have twenty one letters!';
+        if (getLetterCount(testString) !== 21) {
+          console.error('testSimpleLetterCount FAIL');
+        }
+      };
+      // Existen framework para facilitar el test unitario
+      // https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2019-264e19514d0a
+
+      // TIPO 2: Integration test
+      // comprobar que varias funciones/clases trabajan juntas correctamente
+      // Ejemplo: un metodo que llama a varios metodos
+
+      // TIPO 3: Functional Test o end-to-end test (E2E)
+      // Comprueba una funcionalidad del sistema de principio a fin
+      // login -> ver notificaciones -> marcar todas como leidas
+    </script>
+  </body>
+</html>

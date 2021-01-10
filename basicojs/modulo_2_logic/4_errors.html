@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>4 Errors</title>
+  </head>
+  <body>
+    <script>
+      // 3 tipos de error
+
+      // 1. Syntax error
+      // falta parentesis, palabra reservada mal escrita
+      // Solucion: usar un IDE. Te ayuda a detectar estos fallos
+
+      // logic errors
+      // asignar valor a variable que no es
+      // malas condiciones en if
+      // SOLUCION: test unitarios
+
+      // runtime errors
+      // aparecen en ejecucion
+      // SOLUCION: capturar posibles errores con try/catch
+      try {
+        // variable amigo no existe
+        console.log(amigo);
+      } catch (error) {
+        // capturamos error y lo tratamos
+        console.log('ERROR: ' + error);
+      }
+    </script>
+  </body>
+</html>

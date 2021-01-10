@@ -1,0 +1,39 @@
+
+1. Javascript basico
+https://openclassrooms.com/en/courses/5664271-learn-programming-with-javascript
+
+2. Javascript Web
+https://openclassrooms.com/en/courses/5493201-write-javascript-for-the-web
+
+3. jQuery
+https://openclassrooms.com/en/courses/3505451-introduction-to-jquery
+
+3. Node/Express
+REQ: Javascript, Git
+https://openclassrooms.com/en/courses/5614116-go-full-stack-with-node-js-express-and-mongodb
+
+4. React
+https://openclassrooms.com/en/courses/4286486-build-web-apps-with-reactjs
+
+4. Vue
+https://openclassrooms.com/en/courses/5664336-create-a-web-application-with-vue-js
+
+
+EXTRA: Git
+https://openclassrooms.com/fr/courses/5671626-manage-your-code-project-with-git-github
+
+
+
+FRANCES
+Bootstrap
+https://openclassrooms.com/fr/courses/6391096-creez-des-sites-web-responsive-avec-bootstrap-4
+React
+https://openclassrooms.com/fr/courses/4664381-realisez-une-application-web-avec-react-js
+Redux
+https://openclassrooms.com/fr/courses/5511091-organisez-votre-application-avec-la-logique-redux
+React Native
+https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native
+
+
+Referencia ES6
+http://es6-features.org

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objetcs</title>
+</head>
+<body>
+<script>
+    // Definicion de un objeto
+    // Usaremos la  JavaScript Object Notation o JSON
+    // coleccion de key:value
+    // VENTAJA: agrupar un grupo de atributos de distinto o igual tipo en un mismo sitio
+    let myBook = {
+        title: '48 leyes del poder',
+        author: 'Robert Greene',
+        numberOfPages: 450,
+        available: true
+    };
+
+    // Acceder al objeto
+    let title = myBook.title;
+    console.log(myBook);
+
+    // Clases (ES6)
+    // Crear objetos manualmente con JSON esta bien para objetos simples pero es tedioso
+    // Ejemplo de crear clase
+    class Book {
+        // metodo constructor se llama para crear objetos
+        constructor(title, author, pages) {
+            // this hace referencia al objeto se esta creando
+            // aqui asignamos lo nuevos valores al nuevo objeto
+            this.title = title;
+            this.author = author;
+            this.pages = pages;
+        }
+    }
+
+    // Crear un objetos usando la clase
+    let otroBook = new Book('Aprende Git en un dia', 'Xavi Peito', 100);
+    console.log('El proximo libro que me leere sera ' + otroBook.title);
+    console.log(otroBook);
+
+</script>
+</body>
+</html>

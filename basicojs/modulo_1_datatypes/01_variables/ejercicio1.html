@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background-color: #111;
+  color: #EEE;
+  font-family: 'Roboto Slab', serif;
+}
+
+.series-frame {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #EEE;
+  margin: 30px;
+  padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="series-frame">
+        <h2>The Story of Tau</h2>
+        <p id="info"></p>
+  </div>    
+  <script>
+      // Create your variables here
+// ==========================================
+/*
+You will create two variables which are needed by a component built by your colleague. 
+Together, you are building the list view for TV shows, and each TV show needs a variable for the number of seasons that show has, and the number of episodes there are in each season.
+Your colleague requests that you name these variables numberOfSeasons and numberOfEpisodes in order to be compatible with their code.
+Create a variable called numberOfSeasons and assign it the value 6 between the lines created for you in the JavaScript editor (the tab labeled "JS").
+Remember to use the let keyword, and don't forget the semicolon at the end of the line!
+Next, create a variable called numberOfEpisodes, and assign it the value 12.
+*/
+let numberOfSeasons=5;
+let numberOfEpisodes=10;
+
+// ==========================================
+
+let paragraph = document.querySelector('#info');
+paragraph.innerText = `${numberOfSeasons} seasons, ${numberOfEpisodes} episodes per season`
+  </script>
+</body>
+</html>
+

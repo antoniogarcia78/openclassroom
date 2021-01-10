@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background-color: #111;
+  color: #EEE;
+  font-family: 'Roboto Slab', serif;
+}
+
+.series-frame {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #EEE;
+  margin: 30px;
+  padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="my-form">
+        <label for="day-input">Number of days</label>
+        <input id="day-input" type="number" min="1">
+        <button id="calculate-button">Calculate!</button>
+        <p id="hours"></p>
+        <p id="minutes"></p>
+        <p id="seconds"></p>
+       </div>   
+  <script>
+    // Create constants here
+    /*
+    This is a small component which breaks a number of days into hours, minutes, and seconds.
+    All you have to do is create the three constants which give the number of hours per day,
+    the number of minutes per hour, and the number of seconds per minute.
+    Playing around with these values will show you how important it is to have the correct constant values!
+
+    In the allotted space, create the following three constants:
+
+    hoursPerDay
+
+    minutesPerHour
+
+    secondsPerMinute
+    */
+// =====================================
+ const hoursPerDay = 24;
+ const minutesPerHour = 60;
+ const secondsPerMinute=60;
+
+
+// =====================================
+
+const dayInput = document.querySelector('#day-input');
+const calculateButton = document.querySelector('#calculate-button');
+const hours = document.querySelector('#hours');
+const minutes = document.querySelector('#minutes');
+const seconds = document.querySelector('#seconds');
+
+calculateButton.addEventListener('click', () => {
+  let days = dayInput.value;
+  let calcHours = days * hoursPerDay;
+  let calcMinutes = calcHours * minutesPerHour;
+  let calcSeconds = calcMinutes * secondsPerMinute;
+  
+  hours.innerText = `${calcHours} hours`;
+  minutes.innerText = `${calcMinutes} minutes`;
+  seconds.innerText = `${calcSeconds} seconds`;
+});
+
+  </script>
+</body>
+</html>
+
+
+
+
+

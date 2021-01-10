@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background-color: #111;
+  color: #EEE;
+  font-family: 'Roboto Slab', serif;
+}
+
+.series-frame {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #EEE;
+  margin: 30px;
+  padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="series-frame">
+        <h2>The Story of Tau</h2>
+        <p id="info"></p>
+  </div>    
+  <script>
+      // Create your variables here
+// ==========================================
+/*
+Time to add a new feature to our show preview box: the total viewing time for a show (very important info for binge-watchers!).
+
+    In the JS editor, create two variables, episodeTime and commercialTime, with appropriate values (45 and 5, for example).
+
+    Using the two time variables you just created, plus the pre-existing number of episodes and number of seasons variables, create a variable called totalShowTime containing 
+    the total viewing time for this show.
+
+The numberOfSeasons and numberOfEpisodes variables have been declared for you in this exercise.
+*/
+let numberOfSeasons = 6;
+let numberOfEpisodes = 12;
+
+// Calculate totalShowTime here
+// =====================================
+let episodeTime = 40;
+let comercialTime=5;
+let totalEpisodeTime =  episodeTime+comercialTime;
+let totalShowTime = numberOfSeasons*numberOfEpisodes*totalEpisodeTime;
+
+
+// =====================================
+
+let paragraph = document.querySelector('#info');
+paragraph.innerText = `${numberOfSeasons} seasons, ${numberOfEpisodes} episodes per season
+
+Total viewing time: ${totalShowTime} minutes`
+
+  </script>
+</body>
+</html>
+
